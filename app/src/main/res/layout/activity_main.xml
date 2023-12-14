@@ -6,13 +6,88 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/bmiicon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bmi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+    </ImageView>
+
     <TextView
+        android:id="@+id/bmitext"
+        android:layout_below="@id/bmiicon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="BMI CALCULATOR"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_below="@id/bmitext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="70dp"
+        android:hint="Enter Height In ( cm )"
+        android:textSize="15dp"
+        android:background="@drawable/edit_text_border"
+        android:paddingLeft="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="monospace">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_below="@id/height"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Weight In ( kg )"
+        android:textSize="15dp"
+        android:background="@drawable/edit_text_border"
+        android:paddingLeft="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="monospace">
+
+    </EditText>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_below="@id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="Calculate"
+        android:textSize="20dp"
+        android:fontFamily="monospace">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_below="@id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:textColor="#000080">
+
+    </TextView>
 
 </RelativeLayout>
