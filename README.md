@@ -9,7 +9,7 @@ This Android BMI Calculator project allows users to calculate their Body Mass In
 
 ## Installation
 Follow the steps below to set up the Android BMI Calculator project:
-1. Clone the repository: `git clone https://github.com/bhavya416/bmi-calculator-android.git`
+1. Clone the repository: `git clone https://github.com/neuqs0035/bmi-calculator-android.git`
 2. Open the project in Android Studio
 3. Build and run the application on an Android emulator or device
 
